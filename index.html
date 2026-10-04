@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Memories 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+    </div>
+
+
+    <!-- FLOATING EMOJI -->
+    <div id="floatingEmojis"></div>
+
+
+    <!-- =========================
+         LOADING
+    ========================== -->
+
+    <div id="loadingScreen">
+
+        <div class="loading-heart">💗</div>
+
+        <h2>Menyiapkan kenangan...</h2>
+
+        <p>Tunggu sebentar yaa ✨</p>
+
+        <div class="loading-bar">
+            <div></div>
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            💗 <span>Our Memories</span>
+        </div>
+
+        <button id="musicButton">
+            🎵 Musik
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section id="introPage" class="intro-page">
+
+        <div class="intro-card">
+
+            <div class="intro-heart">
+                💕
+            </div>
+
+            <div class="intro-label">
+                SPECIAL MEMORY
+            </div>
+
+            <h1>
+                30 Foto
+                <br>
+                <span>30 Cerita</span>
+            </h1>
+
+            <p>
+                Setiap foto menyimpan cerita.
+                Setiap cerita menyimpan kenangan.
+                Dan setiap kenangan layak untuk diingat. ✨
+            </p>
+
+            <button id="startButton">
+                Buka Kenangan 💗
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <main id="galleryPage" class="gallery-page hidden">
+
+        <div class="gallery-header">
+
+            <div>
+                <span>OUR MEMORIES</span>
+
+                <h2 id="slideTitle">
+                    Kenangan #01
+                </h2>
+            </div>
+
+            <div class="counter">
+
+                <strong id="currentNumber">
+                    01
+                </strong>
+
+                <span>/ 30</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROGRESS -->
+
+        <div class="progress-background">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+
+        <!-- SLIDE -->
+
+        <section id="slideCard" class="slide-card">
+
+            <!-- FOTO -->
+
+            <div class="photo-area">
+
+                <div class="photo-glow"></div>
+
+                <img
+                    id="memoryPhoto"
+                    src="images/foto1.jpg"
+                    alt="Kenangan 1"
+                >
+
+                <div
+                    id="photoNumber"
+                    class="photo-number">
+                    01
+                </div>
+
+            </div>
+
+
+            <!-- TEKS -->
+
+            <div class="text-area">
+
+                <div
+                    id="category"
+                    class="category">
+                    💗 AWAL CERITA
+                </div>
+
+                <h1 id="quote">
+                    Kamu adalah salah satu alasan
+                    kenangan terasa begitu indah.
+                </h1>
+
+                <p
+                    id="encouragement"
+                    class="encouragement">
+                    Jangan pernah menyerah.
+                    Kamu jauh lebih kuat dari yang
+                    kamu kira. ✨
+                </p>
+
+
+                <div class="pantun">
+
+                    <div class="pantun-title">
+                        🌷 PANTUN UNTUKMU
+                    </div>
+
+                    <p id="pantunText">
+                        Jalan-jalan membeli melati,<br>
+                        Pulang membawa bunga.<br>
+                        Semoga bahagia selalu di hati,<br>
+                        Dan senyummu tak pernah hilang juga.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+            <button
+                id="previousButton"
+                class="control-button">
+
+                ‹
+                Sebelumnya
+
+            </button>
+
+
+            <div
+                id="dots"
+                class="dots">
+            </div>
+
+
+            <button
+                id="nextButton"
+                class="control-button">
+
+                Berikutnya
+                ›
+
+            </button>
+
+        </div>
+
+
+        <div class="swipe-info">
+            ← Geser foto untuk berpindah →
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         AUDIO
+    ========================== -->
+
+    <audio
+        id="music"
+        loop
+        preload="auto">
+
+        <source
+            src="music/lagu.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
